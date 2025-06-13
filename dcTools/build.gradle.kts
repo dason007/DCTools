@@ -42,6 +42,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    compileOnly("com.google.code.gson:gson:2.8.9")
+    compileOnly("com.tencent:mmkv-static:1.2.13")
+
+    // 如果需要在测试中使用 Gson，可以添加：
+    //testImplementation("com.google.code.gson:gson:2.8.9")
 }
 
 //afterEvaluate {
